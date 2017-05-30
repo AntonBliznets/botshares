@@ -54,20 +54,20 @@ console.log(`CONNECTED TO: ${res[0].network_name}`);
 				let StelthTRX = new TransactionBuilder()
 				
 				StelthTRX.add_type_operation( "blind_transfer", {
-                    fee: {
-                        amount: 0,
-                        asset_id: FEE.get("id")
-                    },
-					
-					inputs: {
-						// To Do
-					},
-					outputs: {
-						// To Do
-					}
-					}
-                    
-                )
+				    fee: {
+					amount: 0,
+					asset_id: FEE.get("id")
+				    },
+
+							inputs: {
+								// To Do
+							},
+							outputs: {
+								// To Do
+							}
+							}
+
+				)
 				
 				
 				tr.set_required_fees().then(() => {
